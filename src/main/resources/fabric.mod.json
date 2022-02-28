@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "breakbeehive",
+  "version": "${version}",
+  "name": "BreakBeehive",
+  "description": "",
+  "authors": [
+    "RedLime"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.redlimerl.mcsr.breakbeehive.BreakBeehive"
+    ],
+    "speedrunigt": [
+      "com.redlimerl.mcsr.breakbeehive.BreakBeehiveImpl"
+    ]
+  },
+  "mixins": [
+    "breakbeehive.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.2",
+    "minecraft": "1.16.1"
+  }
+}
