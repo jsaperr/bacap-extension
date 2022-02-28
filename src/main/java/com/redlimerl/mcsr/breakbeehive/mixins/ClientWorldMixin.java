@@ -2,7 +2,6 @@ package com.redlimerl.mcsr.breakbeehive.mixins;
 
 import com.redlimerl.mcsr.breakbeehive.BreakBeehive;
 import com.redlimerl.speedrunigt.timer.InGameTimer;
-import net.minecraft.block.BeehiveBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.world.ClientWorld;
@@ -20,7 +19,7 @@ public class ClientWorldMixin {
         InGameTimer timer = InGameTimer.getInstance();
 
         if (timer.getCategory() == BreakBeehive.BREAK_BEEHIVE_CATEGORY && timer.isPlaying()) {
-            if (flags == 11 && newState.getBlock() == Blocks.AIR && oldState.getBlock() instanceof BeehiveBlock) {
+            if (flags == 11 && newState.getBlock() == Blocks.AIR && oldState.getBlock() == Blocks.BEE_NEST) {
                 InGameTimer.complete();
             }
         }
