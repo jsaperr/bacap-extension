@@ -1,6 +1,6 @@
 package com.redlimerl.mcsr.breakbeehive;
 
-import com.redlimerl.speedrunigt.timer.running.RunCategory;
+import com.redlimerl.speedrunigt.timer.category.RunCategory;
 import net.fabricmc.api.ClientModInitializer;
 
 public class BreakBeehive implements ClientModInitializer {

@@ -1,7 +1,7 @@
 package com.redlimerl.mcsr.breakbeehive;
 
 import com.redlimerl.speedrunigt.api.SpeedRunIGTApi;
-import com.redlimerl.speedrunigt.timer.running.RunCategory;
+import com.redlimerl.speedrunigt.timer.category.RunCategory;
 
 public class BreakBeehiveImpl implements SpeedRunIGTApi {
     @Override
