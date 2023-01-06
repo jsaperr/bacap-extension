@@ -1,12 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.redlimerl.mcsr.breakbeehive.mixins",
+  "package": "me.char321.bacapextension.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [
-    "ClientWorldMixin"
+    "ClientAdvancementManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

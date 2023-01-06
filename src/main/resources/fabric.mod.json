@@ -1,29 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "breakbeehive",
+  "id": "bacapextension",
   "version": "${version}",
-  "name": "BreakBeehive",
+  "name": "BACAP-SRIGT-Extension",
   "description": "",
   "authors": [
-    "RedLime"
+    "char321"
   ],
   "contact": {},
   "license": "MIT",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.redlimerl.mcsr.breakbeehive.BreakBeehive"
+      "me.char321.bacapextension.BACAPExtension"
     ],
     "speedrunigt": [
-      "com.redlimerl.mcsr.breakbeehive.BreakBeehiveImpl"
+      "me.char321.bacapextension.BACAPExtensionImpl"
     ]
   },
   "mixins": [
-    "breakbeehive.mixins.json"
+    "bacapextension.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.12.2",
-    "minecraft": "1.16.1",
     "speedrunigt": ">=7.0"
   }
 }
