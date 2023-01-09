@@ -28,7 +28,6 @@ import java.util.Set;
 @Mixin(ClientAdvancementManager.class)
 public abstract class ClientAdvancementManagerMixin {
 
-    @Shadow @Final private MinecraftClient client;
     @Shadow @Final private AdvancementManager manager;
 
     @Shadow public abstract AdvancementManager getManager();
