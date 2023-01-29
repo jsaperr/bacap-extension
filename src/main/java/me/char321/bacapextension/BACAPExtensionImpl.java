@@ -13,6 +13,6 @@ public class BACAPExtensionImpl implements SpeedRunIGTApi {
 
     @Override
     public Collection<RunCategory> registerCategories() {
-        return Arrays.asList(BACAPExtension._100_ADV_CATEGORY, BACAPExtension._250_ADV_CATEGORY, BACAPExtension._JUSTICE_CATEGORY, BACAPExtension._RMT_CATEGORY);
+        return Arrays.asList(BACAPExtension._100_ADV_CATEGORY, BACAPExtension._250_ADV_CATEGORY, BACAPExtension._500_ADV_CATEGORY, BACAPExtension._JUSTICE_CATEGORY, BACAPExtension._RMT_CATEGORY, BACAPExtension._AL_CATEGORY);
         }
 }

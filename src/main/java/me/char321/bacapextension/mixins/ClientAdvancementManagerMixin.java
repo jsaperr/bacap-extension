@@ -54,6 +54,10 @@ public abstract class ClientAdvancementManagerMixin {
             if (timer.getCategory() == BACAPExtension._RMT_CATEGORY && Objects.equals(advancement.getId().toString(), new Identifier("blazeandcave:challenges/riddle_me_this").toString())) {
                 InGameTimer.complete();
             }
+            //Advancement Legend
+            if (timer.getCategory() == BACAPExtension._AL_CATEGORY && Objects.equals(advancement.getId().toString(), new Identifier("blazeandcave:bacap/advancement_legend").toString())) {
+                InGameTimer.complete();
+            }
         }
 
         return entry;
@@ -69,6 +73,10 @@ public abstract class ClientAdvancementManagerMixin {
         }
         //250 Advancements
         if (timer.getStatus() != TimerStatus.NONE && timer.getCategory() == BACAPExtension._250_ADV_CATEGORY && this.getCompleteAdvancementsCount() >= 250) {
+            InGameTimer.complete();
+        }
+        //500 Advancements
+        if (timer.getStatus() != TimerStatus.NONE && timer.getCategory() == BACAPExtension._500_ADV_CATEGORY && this.getCompleteAdvancementsCount() >= 500) {
             InGameTimer.complete();
         }
     }
